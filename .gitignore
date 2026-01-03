@@ -43,7 +43,6 @@ uv.lock
 # Output directories (keep directory structure but ignore contents)
 output/*
 !output/.gitkeep
-colmap_output/
 training_output/
 *.ply
 *.pth
@@ -52,10 +51,9 @@ training_output/
 data/images/*
 !data/images/.gitkeep
 
-# COLMAP outputs
-database.db
-sparse/
-dense/
+# Depth maps
+depth_map.png
+*_depth.png
 
 # OS
 .DS_Store
